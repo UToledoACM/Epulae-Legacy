@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Epulae | Never waste food again.</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="styles/Epulae.css" />
+        <link rel="stylesheet" type="text/css" href="styles/sweetalert.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        
+        <!-- div.container>.row>.col-sm-6+.col-sm-6 -->
+        <div class="epulae-header">
+            <div class="container">
+                <div class="row text-center">
+                    <h1 class="col-sm-12 title-text"><i class="fa fa-cutlery">&nbsp;</i>Epulae</h1>
+                    <div class="col-sm-6"></div>
+                    <div class="col-sm-6"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="utility-bar row text-center">
+            <div class="add-food-item col-sm-3">
+                <div class="button circular cta">
+                    <i class="fa fa-plus-square-o"></i>
+                </div>
+            </div>
+            <div class="search-food-items col-sm-6">
+                <input class="search-input button ghost" type="text" placeholder="Search">
+            </div>
+            <div class="menu-button col-sm-3">
+                <div class="button circular cta">
+                    <i class="fa fa-bars"></i>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container">
+    
+            <div class="card-container">
+                <div class="card-heading row">
+                    <div class="image-container col-sm-4">
+                        <img src="https://maxcdn.icons8.com/iOS7/PNG/25/Food/carrot-25.png" title="Carrot">
+                    </div>
+                    <div class="col-sm-8">
+                        <span class="food-title">Carrot</span>
+                    </div>
+                </div>
+                
+                <div class="life-bar">
+                    <div id="stage1" class="life-bar-inner"></div>
+                    <div id="stage2" class="life-bar-inner"></div>
+                    <div id="stage3" class="life-bar-inner"></div>
+                </div>
+                
+                
+                <div class="card-content">
+                    <p>Days Left: 30 days</p>
+                    <p>Nutrition Score: 80%</p>
+                    <p>Quantity: 1200g</p>
+                    <p>Category: Vegetable</p>
+                </div>
+                <div class="button-utility">
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <button id="editItem" class="btn btn-info btn-block">Edit</button>
+                        </div>
+                        <div class="col-xs-6">
+                            <button id="delItem" class="btn btn-danger btn-block">Delete</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+        
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+       <script src="scripts/sweetalert.min.js"></script>    
+    </body>
+</html>
